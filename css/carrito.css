@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+}
+
+.header {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('Img/Sneakers menu.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo img{
+    width: 40px;
+}
+.logo {
+    color: #fffdfc;
+    font-size: 25px;
+    font-weight: 800;
+}
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #fffdfc;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover{
+    color: #ce967b;
+}
+#menu {
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+.header-content {
+    text-align: center;
+    color: #f9fafc;
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%; /* Asegurar que el contenido esté centrado y ocupe todo el ancho */
+}
+
+.header-content h1 {
+    font-size: 55px;
+    line-height: 80px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.header-content p {
+    font-size: 16px;
+    color: #c5c5c5;
+    margin-bottom: 25px;
+}
+
+/* botones */
+.btn-1 {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #ce967b;
+    color: #f9fafc;
+    text-transform: uppercase;
+}
+.btn-1:hover {
+    background-color: #e6a382;
+}
+
+.cart-icon-container {
+    position: fixed;
+    top: 40px; /* Ajusta este valor para moverlo más hacia abajo */
+    right: 40px; /* Ajusta este valor para moverlo más hacia la izquierda */
+    z-index: 1300;
+}
+.Sneakers-content {
+    text-align: center;
+}
+
+.Sneakers-group {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.Sneakers-1,
+.Sneakers-2,
+.Sneakers-3 {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    flex: 1;
+    margin: 0 10px;
+    max-width: 300px;
+    margin-bottom: 15px;
+}
+
+.Sneakers-1:hover,
+.Sneakers-2:hover,
+.Sneakers-3:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.Sneakers-1 img,
+.Sneakers-2 img,
+.Sneakers-3 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.Sneakers-1 h3,
+.Sneakers-2 h3,
+.Sneakers-3 h3 {
+    font-size: 20px;
+    color: #323337;
+    margin-bottom: 10px;
+}
+
+.Sneakers-1 p,
+.Sneakers-2 p,
+.Sneakers-3 p {
+    line-height: 1.6;
+    color: #666;
+}
+
+.Sneakers-1 .btn-1,
+.Sneakers-2 .btn-1,
+.Sneakers-3 .btn-1 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ce967b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.Sneakers-1 .btn-1:hover,
+.Sneakers-2 .btn-1:hover,
+.Sneakers-3 .btn-1:hover {
+    background-color: #e99f7a;
+}
+
+/* Estilos para el ícono del carrito */
+.cart-icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.cart-icon-container {
+    position: fixed;
+    top: 100px; 
+    right: 40px; 
+    z-index: 1300;
+}
+
+/* Estilos para el menú desplegable del carrito */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 10px;
+    right: 0; /* Alinea el menú desplegable a la derecha */
+}
+
+/* Muestra el menú desplegable cuando se hace clic en el ícono del carrito */
+.dropdown-content.show {
+    display: block;
+}
+
+/* Estilos para los botones de remover */
+.remove-btn {
+    margin-left: 10px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: red;
+}
+
+/* Estilos para los productos en el carrito */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+/* Estilos para el botón de proceder al pago */
+.proceed-to-pay {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #e6a382; /* Color azul usado en otros botones */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.proceed-to-pay:hover {
+    background-color: #f6ae8a; /* Cambio de color al pasar el mouse */
+}
+
+.footer {
+    padding: 100px 0;
+    background-color: #000000;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer section h3 {
+    margin-right: 20px;
+}
+
+footer section a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer p {
+    margin-top: 20px;
+}
+@media (max-width: 991px) {
+    .menu {
+        padding: 30px;
+
+    }
+
+    .menu label {
+        display: initial;
+
+    }
+
+    .menu-icono {
+        display: block;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color:#323337;
+        display: none;
+        
+    }
+
+
+    .menu .navbar ul li {
+        width: 100%;
+        
+    }
+
+   
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header {
+        min-height: 0vh;
+    }
+    .header-content {
+        padding: 100px 30px;
+    }
+
+    .header-content p {
+        padding: 0;
+    }
+   
+ 
+    .Sneakers-group{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Sneakers h2,
+    .servicios h2,
+    .blog h2 {
+        font-size: 2rem;
+    }
+
+    .Sneakers .card-title,
+    .blog .card-title {
+        font-size: 1.2rem;
+    }
+
+    .Sneakers .card-text,
+    .blog .card-text {
+        font-size: 0.9rem;
+    }
+}

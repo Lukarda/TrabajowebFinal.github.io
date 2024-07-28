@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos y Carrito - Style Sneakers</title>
+    <link rel="icon" href="css/Img/logo ico.ico">
+    <link rel="stylesheet" href="css/carrito.css">
+    
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="menu container">
+                <a href="index.html" class="logo"><img src="css/Img/logo.jpg" alt=""></a>
+                <input type="checkbox" id="menu" />
+                <label for="menu">
+                  <img src="css/Img/menu.png" class="menu-icono" alt="Ícono de menú">
+                </label>                   
+                
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="carrito.html">Productos</a></li>
+                        <li><a href="login.html">Registro/Login</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-content">
+                <h1>Bienvenido a Style Sneakers</h1>
+                <p>Encuentra los mejores productos aquí</p>
+                <a href="#products" class="btn-1">Ver Productos</a>
+            </div>
+        </header>
+
+        <!-- Carrito en la esquina superior derecha -->
+        <div class="cart-icon-container">
+            <img src="css/Img/carrito-de-compras.png" alt="Carrito" class="cart-icon" onclick="toggleCart()">
+            <div class="dropdown-content">
+                <!-- Aquí irán los productos del carrito -->
+                <ul id="cart-items">
+                    <li>No hay productos en el carrito</li>
+                </ul>
+                <h3>Total: $<span id="cart-total">0.00</span></h3>
+                <button class="proceed-to-pay" onclick="window.location.href = 'compra.html';">Realizar el pago</button>
+
+            </div>
+        </div>
+
+        <section id="products" class="Sneakers">
+            <div class="Sneakers-content container">
+                <h2>Nuestros Productos</h2>
+                <p class="txt-p">Explora nuestra amplia variedad de productos</p>
+                <div class="Sneakers-group">
+                    <div class="Sneakers-1">
+                        <a href="#"><img src="css/Img/product1.webp" alt="Producto 1"></a>
+                        <h3>Producto 1</h3>
+                        <p>$10.00</p>
+                        <a href="#" class="btn-1" data-product-id="1" data-product-name="Producto 1" data-product-price="10">Comprar</a>
+                    </div>
+                    <div class="Sneakers-2">
+                        <a href="#"><img src="css/Img/p2.webp" alt="Producto 2"></a>
+                        <h3>Producto 2</h3>
+                        <p>$20.00</p>
+                        <a href="#" class="btn-1" data-product-id="2" data-product-name="Producto 2" data-product-price="20">Comprar</a>
+                    </div>
+                    <div class="Sneakers-3">
+                        <a href="#"><img src="css/Img/p.jpg" alt="Producto 3"></a>
+                        <h3>Producto 3</h3>
+                        <p>$30.00</p>
+                        <a href="#" class="btn-1" data-product-id="3" data-product-name="Producto 3" data-product-price="30">Comprar</a>
+                    </div>
+                </div>
+                <div class="Sneakers-group">
+                    <div class="Sneakers-1">
+                        <a href="#"><img src="css/Img/p3.webp" alt="Producto 4"></a>
+                        <h3>Producto 4</h3>
+                        <p>$40.00</p>
+                        <a href="#" class="btn-1" data-product-id="4" data-product-name="Producto 4" data-product-price="40">Comprar</a>
+                    </div>
+                    <div class="Sneakers-2">
+                        <a href="#"><img src="css/Img/p4.webp" alt="Producto 5"></a>
+                        <h3>Producto 5</h3>
+                        <p>$50.00</p>
+                        <a href="#" class="btn-1" data-product-id="5" data-product-name="Producto 5" data-product-price="50">Comprar</a>
+                    </div>
+                    <div class="Sneakers-3">
+                        <a href="#"><img src="css/Img/p5.webp" alt="Producto 6"></a>
+                        <h3>Producto 6</h3>
+                        <p>$60.00</p>
+                        <a href="#" class="btn-1" data-product-id="6" data-product-name="Producto 6" data-product-price="60">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <section>
+                <h3>SÍGUENOS EN REDES...</h3>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook"
+                        viewBox="0 0 16 16"> 
+                        <path
+                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42C12.731.222 12.15.088 11.298.048 10.445.01 10.173 0 8 0zm0 1.439c2.137 0 2.39.008 3.233.047.78.036 1.204.166 1.486.276.374.145.641.318.922.598.28.28.453.548.598.922.11.282.24.706.276 1.486.039.843.047 1.096.047 3.233s-.008 2.39-.047 3.233c-.036.78-.166 1.204-.276 1.486a2.479 2.479 0 0 1-.598.922c-.28.28-.548.453-.922.598-.282.11-.706.24-1.486.276-.843.039-1.096.047-3.233.047s-2.39-.008-3.233-.047c-.78-.036-1.204-.166-1.486-.276a2.47 2.47 0 0 1-.922-.598 2.47 2.47 0 0 1-.598-.922c-.11-.282-.24-.706-.276-1.486-.039-.843-.047-1.096-.047-3.233s.008-2.39.047-3.233c.036-.78.166-1.204.276-1.486a2.479 2.479 0 0 1 .598-.922c.28-.28.548-.453.922-.598.282-.11.706-.24 1.486-.276.843-.039 1.096-.047 3.233-.047zM8 3.891A4.109 4.109 0 1 0 8 12.11 4.109 4.109 0 0 0 8 3.89zm0 6.78A2.671 2.671 0 1 1 8 5.33a2.671 2.671 0 0 1 0 5.34zm5.223-6.844a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92z" />
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-youtube" viewBox="0 0 16 16">
+                        <path
+                            d="M8.051 1.999h-.002C3.798 1.986 0 2.588 0 5.995v4.01c0 3.428 3.82 4.009 8.049 4.016 4.254-.007 7.951-.587 7.951-4.016V5.995c0-3.407-3.798-4.009-7.949-3.996zM6.797 10.741V5.26l4.146 2.74-4.146 2.741z" />
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                    </svg>
+                </a>
+            </section>
+            <section>
+                <nav>
+                    <ul>
+                        <li><a href="#">Localizar Local</a></li>
+                        
+                        <li><a href="#">Compañía</a></li>
+                        <li><a href="#">Privacidad</a></li>
+                        <li><a href="#">Ayuda</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section>
+                <p>© 2024 Style Sneakers. Todos los derechos reservados.</p>
+            </section>
+        </footer>
+    </div>
+
+    <script>
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.btn-1[data-product-id]');
+            const cartItems = document.getElementById('cart-items');
+            const cartTotal = document.getElementById('cart-total');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', event => {
+                    event.preventDefault();
+                    const product = {
+                        id: event.target.dataset.productId,
+                        name: event.target.dataset.productName,
+                        price: parseFloat(event.target.dataset.productPrice)
+                    };
+                    addToCart(product);
+                });
+            });
+
+            function addToCart(product) {
+                let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                const existingProduct = cart.find(item => item.id === product.id);
+                if (existingProduct) {
+                    existingProduct.quantity += 1;
+                } else {
+                    product.quantity = 1;
+                    cart.push(product);
+                }
+                localStorage.setItem('cart', JSON.stringify(cart));
+                updateCart();
+                alert(`${product.name} ha sido añadido al carrito.`);
+            }
+
+            function updateCart() {
+                const cart = JSON.parse(localStorage.getItem('cart')) || [];
+                cartItems.innerHTML = '';
+                let total = 0;
+
+                if (cart.length === 0) {
+                    cartItems.innerHTML = '<li>No hay productos en el carrito</li>';
+                } else {
+                    cart.forEach(product => {
+                        total += product.price * product.quantity;
+                        const cartItem = document.createElement('li');
+                        cartItem.classList.add('cart-item');
+                        cartItem.innerHTML = `
+                            ${product.name} - $${product.price.toFixed(2)} x ${product.quantity}
+                            <button class="remove-btn" data-product-id="${product.id}">X</button>
+                        `;
+                        cartItems.appendChild(cartItem);
+
+                        const removeBtn = cartItem.querySelector('.remove-btn');
+                        removeBtn.addEventListener('click', () => removeFromCart(product.id));
+                    });
+                }
+
+                cartTotal.textContent = total.toFixed(2);
+            }
+
+            function removeFromCart(productId) {
+                let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                cart = cart.filter(product => product.id !== productId);
+                localStorage.setItem('cart', JSON.stringify(cart));
+                updateCart();
+            }
+
+            function toggleCart() {
+                const dropdownContent = document.querySelector('.dropdown-content');
+                dropdownContent.classList.toggle('show');
+            }
+
+            function proceedToPayment() {
+                alert('Redirigiendo al proceso de pago...');
+                // Aquí puedes redirigir al usuario a la página de pago o realizar alguna otra acción necesaria.
+            }
+
+            window.toggleCart = toggleCart;
+
+            updateCart();
+        });
+        
+    </script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

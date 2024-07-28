@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1d1c1c;
+}
+
+.logo img{
+    width: 40px;
+}
+
+.logo {
+    color: #000000;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.header-content {
+    text-align: center;
+    color: #f9fafc;
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+}
+
+.header-content h1 {
+    font-size: 75px;
+    line-height: 80px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.header-content p {
+    font-size: 16px;
+    color: #c5c5c5;
+    margin-bottom: 25px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #ce967b;
+    color: #f9fafc;
+    text-transform: uppercase;
+}
+
+.btn-1:hover {
+    background-color: #e6a382;
+}
+
+.container {
+    max-width: 800px;
+    margin: 60px auto 20px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.container h1 {
+    margin-top: 20px;
+    text-align: center;
+    color: #e6a382;
+}
+
+.confirmation-message {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.order-details {
+    margin-top: 30px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+.order-details h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.order-details ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.order-details ul li {
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e6a382;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #d87a64;
+}
+
+.payment-methods {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.payment-methods img {
+    width: 50px;
+    margin: 0 10px;
+}
+
+.payment-form {
+    margin-top: 30px;
+}
+
+.payment-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.payment-form input,
+.payment-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #f60;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+/* Media Query para dispositivos con ancho máximo de 991px */
+@media (max-width: 991px) {
+   
+
+    .container {
+        padding: 15px;
+        margin: 20px auto;
+    }
+    
+    .container h1 {
+        font-size: 1.8em;
+    }
+
+    .order-details h2 {
+        font-size: 1em;
+    }
+    
+    .btn {
+        padding: 8px 15px;
+    }
+    
+    .payment-methods img {
+        width: 40px;
+    }
+    
+  
+}

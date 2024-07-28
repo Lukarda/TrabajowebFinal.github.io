@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="icon" href="css/Img/logo ico.ico">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="index.html" class="logo"><img src="css/Img/logo.jpg" alt=""></a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="css/Img/menu.png" class="menu-icono" alt="Ícono de menú">
+                <div class="menu-icon" id="menu-icon">
+                  
+                  </div>
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="formulario">
+            <h1>Registro</h1>
+            <form method="post">
+                <div class="username">
+                    <input type="text" required>
+                    <i class='bx bxs-user'></i>
+                    <label>Nombre de usuario</label>
+                </div>
+                <div class="email">
+                    <input type="email" required>
+                    <i class='bx bxs-envelope'></i>
+                    <label>Email</label>
+                </div>
+                <div class="contraseña">
+                    <input type="password" required>
+                    <i class='bx bxs-lock-alt'></i>
+                    <label>Contraseña</label>
+                </div>
+                <div class="confirmar-contraseña">
+                    <input type="password" required>
+                    <i class='bx bxs-lock-alt'></i>
+                    <label>Confirmar Contraseña</label>
+                </div>
+                <input type="submit" value="Registrar">
+                <div class="iniciar-sesion">
+                    ¿Tienes una cuenta? <a href="login.html">Inicia sesión</a>
+                </div>
+                <div class="social-login">
+                    <button class="google-btn"><i class='bx bxl-google'></i> Registrarse con Google</button>
+                    <button class="facebook-btn"><i class='bx bxl-facebook'></i> Registrarse con Facebook</button>
+                    <button class="microsoft-btn"><i class='bx bxl-microsoft'></i> Registrarse con Microsoft</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

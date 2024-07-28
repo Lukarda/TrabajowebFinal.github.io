@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+}
+
+.header {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('Img/Sneakers menu.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo img{
+    width: 40px;
+}
+.logo {
+    color: #fffdfc;
+    font-size: 25px;
+    font-weight: 800;
+}
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #fffdfc;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover{
+    color: #ce967b;
+}
+#menu {
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+.header-content {
+    text-align: center;
+    color: #f9fafc;
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%; /* Asegurar que el contenido esté centrado y ocupe todo el ancho */
+}
+
+.header-content h1 {
+    font-size: 45px;
+    line-height: 80px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.header-content p {
+    font-size: 16px;
+    color: #c5c5c5;
+    margin-bottom: 25px;
+}
+
+/* botones */
+.btn-1 {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #ce967b;
+    color: #f9fafc;
+    text-transform: uppercase;
+}
+
+.btn-1:hover {
+    background-color: #e6a382;
+}
+.about-us, .testimonials, .contact-box {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.about-us h2, .testimonials h2, .contact-box h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.about-us p, .testimonials p, .contact-box p {
+    font-size: 16px;
+    color: #414247;
+    margin: 25px 0 45px;
+}
+
+.testimonial {
+    margin: 20px 0;
+    font-style: italic;
+    color: #414247;
+}
+
+.contact-box {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px 10px; /* Reduce el padding horizontal */
+    border-radius: 5px;
+    max-width: 500px; /* Define un ancho máximo */
+    margin: 0 auto; /* Centra el cuadro */
+}
+
+.contact-box input, .contact-box textarea {
+    width: 90%; /* Reduce el ancho de los inputs */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-left: auto; /* Asegura que los inputs estén centrados */
+    margin-right: auto;
+}
+.contact-box input[type="submit"] {
+    background-color: #ce967b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contact-box input[type="submit"]:hover {
+    background-color: #e6a382;
+}
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #f60;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+}
+
+footer p {
+    margin: 10px 0;
+}
+/* Responsive Styles */
+@media (max-width: 991px) {
+    .menu {
+        padding: 30px;
+
+    }
+
+    .menu label {
+        display: initial;
+
+    }
+
+    .menu-icono {
+        display: block;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color:#323337;
+        display: none;
+        
+    }
+
+
+    .menu .navbar ul li {
+        width: 100%;
+        
+    }
+
+   
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header {
+        min-height: 0vh;
+    }
+    .header-content {
+        padding: 100px 30px;
+    }
+
+    .header-content p {
+        padding: 0;
+    }
+}
